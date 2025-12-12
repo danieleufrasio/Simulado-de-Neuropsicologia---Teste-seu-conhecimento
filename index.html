@@ -1,113 +1,131 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quiz Neuropsicologia</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <!-- Bootstrap 5 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { background-color: #f7f7f7; }
-    .question-card { min-height: 200px; }
-    .option-label { cursor: pointer; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz Neuropsicologia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-wrapper {
+            flex: 1 0 auto;
+            /* conteúdo cresce e empurra o footer */
+        }
+
+        .footer {
+            flex-shrink: 0;
+            /* footer fixa na parte de baixo */
+        }
+
+        .question-card {
+            min-height: 200px;
+        }
+
+        .option-label {
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-<nav class="navbar navbar-dark bg-dark mb-4">
-  <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Quiz – Neuropsicologia do Desenvolvimento</span>
-    <span class="badge bg-warning text-dark">
-      Tempo restante: <span id="timer">20:00</span>
-    </span>
-  </div>
-</nav>
+    <div class="page-wrapper">
+        <nav class="navbar navbar-dark bg-dark mb-4">
+            <div class="container-fluid"> <span class="navbar-brand mb-0 h1">Quiz – Neuropsicologia do
+                    Desenvolvimento</span> <span class="badge bg-warning text-dark"> Tempo restante: <span
+                        id="timer">20:00</span> </span> </div>
+        </nav>
+        <div class="container"> <!-- Progresso de questões -->
+            <div class="mb-3">
+                <div class="d-flex justify-content-between"> <span>Progresso das questões</span> <span
+                        id="questionCounter">Questão 1</span> </div>
+                <div class="progress">
+                    <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            text
+            <!-- Card de questão -->
+            <div class="card question-card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title" id="questionTitle"></h5>
+                    <p class="card-text" id="questionText"></p>
 
-<div class="container">
-  <!-- Progresso de questões -->
-  <div class="mb-3">
-    <div class="d-flex justify-content-between">
-      <span>Progresso das questões</span>
-      <span id="questionCounter">Questão 1</span>
+                    <form id="optionsForm" class="mt-3"></form>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between mb-3">
+                <button id="prevBtn" class="btn btn-outline-secondary" disabled>Anterior</button>
+                <button id="nextBtn" class="btn btn-primary">Próxima</button>
+                <button id="finishBtn" class="btn btn-success d-none">Finalizar</button>
+            </div>
+
+            <!-- Resultado geral -->
+            <div id="resultSection" class="d-none mb-4">
+                <div class="alert alert-info">
+                    <h5>Resultado do Quiz</h5>
+                    <p id="scoreText"></p>
+                </div>
+
+                <!-- Gráfico geral (acertos x erros) -->
+                <div class="mb-3">
+                    <strong>Desempenho geral</strong>
+                    <div class="progress">
+                        <div id="correctBar" class="progress-bar bg-success" style="width: 0%;">0% acertos</div>
+                        <div id="wrongBar" class="progress-bar bg-danger" style="width: 0%;">0% erros</div>
+                    </div>
+                </div>
+
+                <!-- Correções por questão -->
+                <div class="mt-3">
+                    <h6>Correções por questão</h6>
+                    <ul id="correctionsList" class="list-group"></ul>
+                </div>
+            </div>
+
+            <!-- "Gráfico" por tópico (onde estudar mais) -->
+            <div id="topicSection" class="d-none mb-5">
+                <h5>Quais tópicos você precisa estudar mais</h5>
+                <p class="text-muted">
+                    Quanto menor a porcentagem de acertos em cada tópico, maior a prioridade de estudo.
+                </p>
+
+                <div id="topicContainer"></div>
+            </div>
+        </div>
     </div>
-    <div class="progress">
-      <div id="progressBar" class="progress-bar" role="progressbar"
-           style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-    </div>
-  </div>
-
-  <!-- Card de questão -->
-  <div class="card question-card mb-3">
-    <div class="card-body">
-      <h5 class="card-title" id="questionTitle"></h5>
-      <p class="card-text" id="questionText"></p>
-
-      <form id="optionsForm" class="mt-3"></form>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between mb-3">
-    <button id="prevBtn" class="btn btn-outline-secondary" disabled>Anterior</button>
-    <button id="nextBtn" class="btn btn-primary">Próxima</button>
-    <button id="finishBtn" class="btn btn-success d-none">Finalizar</button>
-  </div>
-
-  <!-- Resultado geral -->
-  <div id="resultSection" class="d-none mb-4">
-    <div class="alert alert-info">
-      <h5>Resultado do Quiz</h5>
-      <p id="scoreText"></p>
-    </div>
-
-    <!-- Gráfico geral (acertos x erros) -->
-    <div class="mb-3">
-      <strong>Desempenho geral</strong>
-      <div class="progress">
-        <div id="correctBar" class="progress-bar bg-success" style="width: 0%;">0% acertos</div>
-        <div id="wrongBar" class="progress-bar bg-danger" style="width: 0%;">0% erros</div>
-      </div>
-    </div>
-
-    <!-- Correções por questão -->
-    <div class="mt-3">
-      <h6>Correções por questão</h6>
-      <ul id="correctionsList" class="list-group"></ul>
-    </div>
-  </div>
-
-  <!-- "Gráfico" por tópico (onde estudar mais) -->
-  <div id="topicSection" class="d-none mb-5">
-    <h5>Quais tópicos você precisa estudar mais</h5>
-    <p class="text-muted">
-      Quanto menor a porcentagem de acertos em cada tópico, maior a prioridade de estudo.
-    </p>
-
-    <div id="topicContainer"></div>
-  </div>
-</div>
-<footer class="footer mt-auto py-3 bg-dark text-light">
-  <div class="container-fluid d-flex justify-content-between align-items-center">
-    <span class="text-white-50">
-      Desenvolvido por Daniel Eufrasio
-    </span>
-
-    <div>
-      <a href="https://www.linkedin.com/in/danieleufrasio/" target="_blank" class="text-light me-3 footer-link">
-        <i class="bi bi-linkedin me-1"></i> LinkedIn
-      </a>
-      <a href="https://www.instagram.com/eufrasio_cyborg/" target="_blank" class="text-light footer-link">
-        <i class="bi bi-instagram me-1"></i> Instagram
-      </a>
-    </div>
-  </div>
-</footer>
-<!-- Bootstrap 5 JS (bundle) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Arquivo com as questões -->
-<script src="questions.js"></script>
-
-<!-- Lógica do quiz -->
-<script src="script.js"></script>
+    <footer class="footer py-3 bg-dark text-light">
+        <div class="container-fluid d-flex flex-column flex-md-row justify-content-between align-items-center"> <span
+                class="text-white-50 mb-2 mb-md-0"> Desenvolvido por Daniel Eufrasio </span>
+            text
+            <div>
+                <a href="https://www.linkedin.com/in/danieleufrasio/" target="_blank"
+                    class="text-light me-3 footer-link">
+                    <i class="bi bi-linkedin me-1"></i> LinkedIn
+                </a>
+                <a href="https://www.instagram.com/eufrasio_cyborg/" target="_blank" class="text-light footer-link">
+                    <i class="bi bi-instagram me-1"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </footer> <!-- Bootstrap 5 JS (bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Arquivo com as questões -->
+    <script src="questions.js"></script> <!-- Lógica do quiz -->
+    <script src="script.js"></script>
 </body>
+
 </html>
