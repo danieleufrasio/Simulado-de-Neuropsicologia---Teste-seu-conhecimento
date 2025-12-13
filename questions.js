@@ -197,5 +197,201 @@ const questions = [
     ],
     correctIndex: 2,
     correction: "Ambientes adversos, como negligência e estresse crônico, podem restringir a plasticidade e comprometer o desenvolvimento cognitivo e emocional."
+  },
+  // FUNÇÕES EXECUTIVAS E DESENVOLVIMENTO COGNITIVO
+  {
+    topic: "Funções executivas",
+    title: "Definição de funções executivas",
+    text: "As funções executivas podem ser melhor descritas como:",
+    options: [
+      "Habilidades motoras automáticas, como andar e correr",
+      "Conjunto de habilidades cognitivas responsáveis por planejar, organizar, regular e monitorar o comportamento",
+      "Capacidades exclusivamente emocionais, sem relação com a cognição",
+      "Processos restritos à percepção sensorial"
+    ],
+    correctIndex: 1,
+    correction: "Funções executivas são um conjunto de habilidades cognitivas de alto nível que permitem planejar, organizar, regular e monitorar o comportamento de forma intencional e dirigida a metas."
+  },
+  {
+    topic: "Funções executivas",
+    title: "Localização cerebral",
+    text: "As funções executivas são mediadas, principalmente, por qual região cerebral?",
+    options: [
+      "Cerebelo",
+      "Lobo occipital",
+      "Córtex pré-frontal",
+      "Tronco encefálico"
+    ],
+    correctIndex: 2,
+    correction: "As funções executivas são mediadas principalmente pelo córtex pré-frontal, cuja maturação se estende até o início da vida adulta."
+  },
+  {
+    topic: "Memória de trabalho",
+    title: "Conceito de memória de trabalho",
+    text: "A memória de trabalho refere-se à capacidade de:",
+    options: [
+      "Armazenar informações para toda a vida sem necessidade de uso",
+      "Manter e manipular temporariamente informações para realizar tarefas complexas",
+      "Esquecer informações irrelevantes de forma automática",
+      "Registrar apenas memórias emocionais intensas"
+    ],
+    correctIndex: 1,
+    correction: "A memória de trabalho é a capacidade de manter e manipular informações por um curto período para executar tarefas como resolução de problemas, leitura e seguir instruções."
+  },
+  {
+    topic: "Memória de trabalho",
+    title: "Importância da memória de trabalho",
+    text: "Qual situação depende fortemente da memória de trabalho?",
+    options: [
+      "Apenas reconhecer um rosto familiar sem pensar",
+      "Executar uma tarefa automática, como amarrar o cadarço",
+      "Resolver mentalmente um problema matemático de vários passos",
+      "Ter um reflexo rápido ao encostar em algo quente"
+    ],
+    correctIndex: 2,
+    correction: "Resolver mentalmente um problema matemático de vários passos exige manter informações ativas e manipulá-las, o que é típico da memória de trabalho."
+  },
+  {
+    topic: "Controle inibitório",
+    title: "Controle inibitório",
+    text: "O controle inibitório é importante para:",
+    options: [
+      "Aumentar impulsos automáticos sem reflexão",
+      "Resistir a impulsos e distrações para adotar comportamentos mais adequados",
+      "Reduzir a atenção a qualquer estímulo do ambiente",
+      "Impedir a expressão de emoções em qualquer contexto"
+    ],
+    correctIndex: 1,
+    correction: "O controle inibitório permite resistir a impulsos automáticos e distrações, favorecendo a escolha de comportamentos mais adequados às normas e objetivos."
+  },
+  {
+    topic: "Controle inibitório",
+    title: "Controle inibitório e TDAH",
+    text: "Déficits importantes no controle inibitório estão frequentemente associados a:",
+    options: [
+      "Transtorno do Espectro Autista (TEA)",
+      "Transtorno de Déficit de Atenção e Hiperatividade (TDAH)",
+      "Transtorno de pânico",
+      "Dislexia"
+    ],
+    correctIndex: 1,
+    correction: "Pesquisas indicam que dificuldades no controle inibitório são centrais em muitos casos de TDAH, afetando a capacidade de autocontrole e atenção."
+  },
+  {
+    topic: "Flexibilidade cognitiva",
+    title: "Flexibilidade cognitiva",
+    text: "Flexibilidade cognitiva é a capacidade de:",
+    options: [
+      "Repetir sempre a mesma estratégia, mesmo quando não funciona",
+      "Manter um único foco de atenção o tempo todo",
+      "Alternar estratégias de pensamento e comportamento diante de novas demandas",
+      "Evitar qualquer mudança no ambiente"
+    ],
+    correctIndex: 2,
+    correction: "Flexibilidade cognitiva é a capacidade de mudar estratégias, alternar entre tarefas ou pontos de vista para se adaptar a novas situações."
+  },
+  {
+    topic: "Planejamento e tomada de decisão",
+    title: "Planejamento e decisão",
+    text: "O planejamento e a tomada de decisão envolvem, entre outros aspectos:",
+    options: [
+      "Apenas reagir de forma impulsiva aos estímulos",
+      "Definir metas, antecipar consequências e escolher estratégias para alcançá-las",
+      "Memorizar informações sem analisá-las",
+      "Ignorar experiências prévias ao escolher uma ação"
+    ],
+    correctIndex: 1,
+    correction: "Planejamento e tomada de decisão incluem definir metas, analisar alternativas, antecipar consequências e escolher estratégias adequadas."
+  },
+  {
+    topic: "Desenvolvimento do córtex pré-frontal",
+    title: "Maturação do córtex pré-frontal",
+    text: "Sobre a maturação do córtex pré-frontal e as funções executivas, é correto afirmar que:",
+    options: [
+      "O córtex pré-frontal amadurece completamente na primeira infância",
+      "Sua maturação termina por volta dos 7 anos de idade",
+      "Ele continua se desenvolvendo até o final da adolescência e início da vida adulta",
+      "Ele não influencia o comportamento social"
+    ],
+    correctIndex: 2,
+    correction: "O córtex pré-frontal passa por um longo processo de mielinização e poda sináptica que se estende até o final da adolescência e início da vida adulta, o que explica a evolução gradual das funções executivas."
+  },
+  {
+    topic: "Ambiente e funções executivas",
+    title: "Ambiente e desenvolvimento executivo",
+    text: "Qual opção descreve melhor a influência do ambiente sobre o desenvolvimento das funções executivas?",
+    options: [
+      "O ambiente não interfere no desenvolvimento das funções executivas",
+      "Apenas fatores genéticos determinam as funções executivas",
+      "Interações familiares, práticas pedagógicas e estimulação cognitiva podem fortalecer ou prejudicar as funções executivas",
+      "Somente o uso de tecnologia determina o desenvolvimento executivo"
+    ],
+    correctIndex: 2,
+    correction: "Fatores como interações familiares de qualidade, estimulação cognitiva, práticas pedagógicas e condições socioeconômicas influenciam fortemente o desenvolvimento das funções executivas."
+  },
+  {
+    topic: "Estresse e funções executivas",
+    title: "Impacto do estresse tóxico",
+    text: "O estresse tóxico e prolongado na infância e adolescência tende a:",
+    options: [
+      "Melhorar automaticamente a autorregulação e o controle inibitório",
+      "Não ter qualquer impacto sobre o cérebro em desenvolvimento",
+      "Elevar níveis de cortisol e prejudicar estruturas como hipocampo e córtex pré-frontal",
+      "Fortalecer a memória de trabalho em todos os casos"
+    ],
+    correctIndex: 2,
+    correction: "A exposição prolongada ao estresse tóxico aumenta o cortisol e pode afetar negativamente estruturas como o hipocampo e o córtex pré-frontal, prejudicando memória de trabalho, autocontrole e outras funções executivas."
+  },
+  {
+    topic: "Atenção e aprendizagem",
+    title: "Tipos de atenção",
+    text: "A atenção, importante para a aprendizagem, pode ser dividida em modalidades como:",
+    options: [
+      "Atenção seletiva, sustentada, alternada e dividida",
+      "Apenas atenção motora e visual",
+      "Atenção curta e atenção longa",
+      "Apenas atenção consciente"
+    ],
+    correctIndex: 0,
+    correction: "Atenção seletiva, sustentada, alternada e dividida são modalidades que envolvem diferentes circuitos neurais e são fundamentais para o rendimento escolar."
+  },
+  {
+    topic: "Atenção e aprendizagem",
+    title: "Atenção e desempenho escolar",
+    text: "Disfunções nos sistemas atencionais podem levar a:",
+    options: [
+      "Melhora automática do desempenho escolar",
+      "Nenhuma alteração na aprendizagem",
+      "Comprometimento do rendimento escolar e necessidade de intervenções específicas",
+      "Apenas dificuldades motoras, sem relação com a aprendizagem"
+    ],
+    correctIndex: 2,
+    correction: "Alterações na atenção seletiva, sustentada, alternada ou dividida podem comprometer o desempenho escolar e demandar intervenções adaptadas ao perfil do estudante."
+  },
+  {
+    topic: "Memória e aprendizagem",
+    title: "Integração da memória",
+    text: "A consolidação das informações na aprendizagem depende principalmente da integração entre:",
+    options: [
+      "Memória de trabalho, memória de curto prazo e memória de longo prazo",
+      "Apenas memória sensorial",
+      "Somente memória emocional",
+      "Somente memória implícita"
+    ],
+    correctIndex: 0,
+    correction: "A aprendizagem exige articulação entre memória de trabalho, de curto prazo e de longo prazo, mediada por estruturas como hipocampo e córtex pré-frontal."
+  },
+  {
+    topic: "Ambiente escolar e plasticidade",
+    title: "Ambiente escolar e cérebro",
+    text: "Sobre o papel do ambiente escolar no desenvolvimento cognitivo, é correto afirmar que:",
+    options: [
+      "Ambientes escolares não influenciam a plasticidade cerebral",
+      "Ambientes enriquecidos, seguros e estimulantes favorecem novas conexões neurais e funções executivas",
+      "Apenas o uso de tecnologia interfere na aprendizagem",
+      "O ambiente escolar só influencia habilidades motoras"
+    ],
+    correctIndex: 1,
+    correction: "Ambientes escolares emocionalmente seguros e intelectualmente estimulantes favorecem a plasticidade cerebral, o fortalecimento das funções executivas e a aprendizagem."
   }
 ];

@@ -4,19 +4,22 @@
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    // troca de posição
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
 }
 
-// Embaralha as questões assim que o script carregar
+// Embaralha TODAS as questões e seleciona só 10
 shuffleArray(questions);
+const MAX_QUESTIONS = 10;
+const selectedQuestions = questions.slice(0, MAX_QUESTIONS);
+
+// A partir daqui o quiz usa selectedQuestions em vez de questions
 
 // =========================
 // ESTADO DO QUIZ
 // =========================
-let userAnswers = new Array(questions.length).fill(null);
+let userAnswers = new Array(selectedQuestions.length).fill(null);
 let currentQuestionIndex = 0;
 
 // =========================
@@ -67,12 +70,12 @@ const topicContainer = document.getElementById("topicContainer");
 // RENDERIZAÇÃO DE QUESTÃO
 // =========================
 function renderQuestion(index) {
-  const q = questions[index];
+  const q = selectedQuestions[index];
   questionTitleEl.textContent = q.title;
   questionTextEl.textContent = q.text;
-  questionCounterEl.textContent = `Questão ${index + 1} de ${questions.length}`;
+  questionCounterEl.textContent = `Questão ${index + 1} de ${selectedQuestions.length}`;
 
-  const progress = (index / questions.length) * 100;
+  const progress = (index / selectedQuestions.length) * 100;
   progressBarEl.style.width = `${progress}%`;
   progressBarEl.setAttribute("aria-valuenow", progress);
 
@@ -108,8 +111,8 @@ function renderQuestion(index) {
   });
 
   prevBtn.disabled = index === 0;
-  nextBtn.classList.toggle("d-none", index === questions.length - 1);
-  finishBtn.classList.toggle("d-none", index !== questions.length - 1);
+  nextBtn.classList.toggle("d-none", index === selectedQuestions.length - 1);
+  finishBtn.classList.toggle("d-none", index !== selectedQuestions.length - 1);
 }
 
 // =========================
@@ -123,7 +126,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 nextBtn.addEventListener("click", () => {
-  if (currentQuestionIndex < questions.length - 1) {
+  if (currentQuestionIndex < selectedQuestions.length - 1) {
     currentQuestionIndex++;
     renderQuestion(currentQuestionIndex);
   }
@@ -138,11 +141,11 @@ function finishQuiz() {
   clearInterval(timerInterval);
 
   let correctCount = 0;
-  const total = questions.length;
+  const total = selectedQuestions.length;
 
   correctionsList.innerHTML = "";
 
-  questions.forEach((q, index) => {
+  selectedQuestions.forEach((q, index) => {
     const userAnswer = userAnswers[index];
     const isCorrect = userAnswer === q.correctIndex;
     if (isCorrect) correctCount++;
@@ -184,7 +187,7 @@ function finishQuiz() {
 function calculateTopicsPerformance() {
   const topicStats = {};
 
-  questions.forEach((q, index) => {
+  selectedQuestions.forEach((q, index) => {
     const topic = q.topic;
     if (!topicStats[topic]) {
       topicStats[topic] = { total: 0, correct: 0 };
@@ -250,5 +253,5 @@ function calculateTopicsPerformance() {
   topicSection.classList.remove("d-none");
 }
 
-// inicializa primeira questão (já com array embaralhado)
+// inicializa primeira questão
 renderQuestion(currentQuestionIndex);
