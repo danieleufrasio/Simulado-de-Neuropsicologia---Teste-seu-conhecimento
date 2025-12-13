@@ -11,7 +11,7 @@ function shuffleArray(array) {
 
 // Embaralha TODAS as questões e seleciona só 10
 shuffleArray(questions);
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = 15;
 const selectedQuestions = questions.slice(0, MAX_QUESTIONS);
 
 // A partir daqui o quiz usa selectedQuestions em vez de questions

@@ -393,5 +393,187 @@ const questions = [
     ],
     correctIndex: 1,
     correction: "Ambientes escolares emocionalmente seguros e intelectualmente estimulantes favorecem a plasticidade cerebral, o fortalecimento das funções executivas e a aprendizagem."
+  },
+  {
+    topic: "Bases neuropsicológicas da linguagem",
+    title: "Linguagem como função cognitiva",
+    text: "Do ponto de vista neuropsicológico, a linguagem pode ser melhor definida como:",
+    options: [
+      "Apenas a capacidade de pronunciar sons",
+      "Somente a habilidade de nomear objetos do ambiente",
+      "Um conjunto de processos que permitem organizar pensamentos, expressar sentimentos e construir significados",
+      "Uma função exclusivamente motora ligada aos músculos da fala"
+    ],
+    correctIndex: 2,
+    correction: "Neuropsicologicamente, a linguagem envolve organizar pensamentos, expressar sentimentos, compartilhar experiências e construir significados por meio de uma rede complexa de estruturas cerebrais."
+  },
+  {
+    topic: "Bases neuropsicológicas da linguagem",
+    title: "Componentes da linguagem",
+    text: "Quais componentes são comumente considerados na análise neuropsicológica da linguagem?",
+    options: [
+      "Apenas fonologia e sintaxe",
+      "Somente semântica e pragmática",
+      "Fonologia, semântica, sintaxe, morfologia e pragmática",
+      "Apenas compreensão e produção oral"
+    ],
+    correctIndex: 2,
+    correction: "A linguagem envolve diferentes níveis: fonologia, semântica, sintaxe, morfologia e pragmática, que são processados por redes neurais integradas."
+  },
+  {
+    topic: "Bases neuropsicológicas da linguagem",
+    title: "Áreas de Broca e Wernicke",
+    text: "Sobre as áreas de Broca e Wernicke, é correto afirmar que:",
+    options: [
+      "Ambas estão localizadas no hemisfério direito em todos os indivíduos",
+      "A área de Broca está ligada principalmente à compreensão, e a de Wernicke à articulação da fala",
+      "A área de Broca relaciona-se à produção e estruturação gramatical; a de Wernicke, à compreensão da linguagem",
+      "Nenhuma delas se relaciona diretamente com a linguagem"
+    ],
+    correctIndex: 2,
+    correction: "A área de Broca, no giro frontal inferior, está ligada à produção da fala e à estruturação gramatical; a área de Wernicke, no giro temporal superior, está relacionada à compreensão da linguagem."
+  },
+  {
+    topic: "Bases neuropsicológicas da linguagem",
+    title: "Afasia de Broca",
+    text: "A afasia de Broca é caracterizada principalmente por:",
+    options: [
+      "Fala fluente, mas com conteúdo sem sentido e grande dificuldade de compreensão",
+      "Fala lenta, entrecortada e agramatical, com compreensão relativamente preservada",
+      "Ausência completa de qualquer forma de linguagem, inclusive não verbal",
+      "Dificuldade exclusiva na leitura, sem alterações na fala"
+    ],
+    correctIndex: 1,
+    correction: "Na afasia de Broca, a fala é lenta, entrecortada e com prejuízo gramatical, enquanto a compreensão costuma estar relativamente preservada."
+  },
+  {
+    topic: "Bases neuropsicológicas da linguagem",
+    title: "Afasia de Wernicke",
+    text: "Qual é uma característica típica da afasia de Wernicke?",
+    options: [
+      "Produção verbal reduzida, porém gramaticalmente correta",
+      "Fala fluente, porém com conteúdo sem sentido e compreensão prejudicada",
+      "Dificuldades apenas em repetir palavras, sem alteração de compreensão",
+      "Comprometimento motor severo sem alterações de linguagem"
+    ],
+    correctIndex: 1,
+    correction: "Na afasia de Wernicke, a fala tende a ser fluente, mas com conteúdo desorganizado ou sem sentido, acompanhada de comprometimento importante da compreensão."
+  },
+  {
+    topic: "Bases neuropsicológicas da linguagem",
+    title: "Rede ampliada da linguagem",
+    text: "Estudos recentes indicam que a linguagem não se restringe apenas às áreas de Broca e Wernicke, mas envolve também:",
+    options: [
+      "Somente o cerebelo",
+      "Apenas o córtex occipital",
+      "Córtex pré-frontal, giros temporais médios e inferiores, giro angular e estruturas subcorticais",
+      "Somente o hipocampo"
+    ],
+    correctIndex: 2,
+    correction: "Além de Broca e Wernicke, a linguagem envolve redes que incluem córtex pré-frontal, áreas temporais, giro angular e estruturas subcorticais como tálamo e gânglios da base."
+  },
+  {
+    topic: "Desenvolvimento da linguagem",
+    title: "Linguagem e interação social",
+    text: "Segundo abordagens histórico-culturais, o desenvolvimento da linguagem está fortemente ligado:",
+    options: [
+      "Apenas à maturação biológica, independente do contexto social",
+      "Exclusivamente à herança genética, sem influência do ambiente",
+      "À interação social e às práticas culturais nas quais a criança está inserida",
+      "Somente à exposição passiva a programas de TV"
+    ],
+    correctIndex: 2,
+    correction: "Perspectivas como a de Vygotsky destacam que a linguagem se desenvolve na interação social, mediada culturalmente, e depois é internalizada como linguagem interna, fundamental para o pensamento."
+  },
+  {
+    topic: "Desenvolvimento da linguagem",
+    title: "Janela de oportunidade para linguagem",
+    text: "A chamada 'janela de oportunidade' para o desenvolvimento da linguagem refere-se a:",
+    options: [
+      "Um único dia específico da vida em que a linguagem se desenvolve",
+      "Um período precoce da infância em que o cérebro é especialmente sensível aos estímulos linguísticos",
+      "Um momento exclusivo da adolescência em que se aprende a falar",
+      "Uma fase apenas da vida adulta em que se adquire vocabulário"
+    ],
+    correctIndex: 1,
+    correction: "A 'janela de oportunidade' para a linguagem corresponde aos primeiros anos de vida, quando o cérebro é altamente sensível a estímulos linguísticos e à interação comunicativa."
+  },
+  {
+    topic: "Linguagem escrita e dislexia",
+    title: "Bases neurais da leitura",
+    text: "A leitura envolve principalmente a integração de quais tipos de processamento?",
+    options: [
+      "Apenas processamento motor",
+      "Apenas processamento emocional",
+      "Processamento visual, fonológico e semântico em redes corticais integradas",
+      "Somente processamento auditivo"
+    ],
+    correctIndex: 2,
+    correction: "A leitura exige integração de informações visuais, fonológicas e semânticas em áreas como a região occipitotemporal esquerda e outros circuitos linguísticos."
+  },
+  {
+    topic: "Linguagem escrita e dislexia",
+    title: "Dislexia",
+    text: "A dislexia é caracterizada por:",
+    options: [
+      "Dificuldade global de inteligência e ausência de escolarização",
+      "Comprometimento motor amplo sem alterações de leitura",
+      "Dificuldades significativas na decodificação fonológica e na fluência de leitura, apesar de inteligência e escolarização adequadas",
+      "Apenas problemas comportamentais sem relação com leitura"
+    ],
+    correctIndex: 2,
+    correction: "A dislexia envolve dificuldades persistentes de decodificação fonológica e fluência de leitura, não explicadas por déficits intelectuais ou falta de escolarização."
+  },
+  {
+    topic: "Linguagem escrita e dislexia",
+    title: "Neuroimagem na dislexia",
+    text: "Estudos de neuroimagem em indivíduos com dislexia frequentemente mostram:",
+    options: [
+      "Ativação idêntica à de leitores típicos em todas as áreas da linguagem",
+      "Padrões atípicos de ativação em regiões como o giro fusiforme esquerdo e áreas temporais",
+      "Lesões extensas no cerebelo em todos os casos",
+      "Ausência total de atividade cerebral nas tarefas de leitura"
+    ],
+    correctIndex: 1,
+    correction: "Pesquisas indicam padrões atípicos de ativação em regiões como o giro fusiforme esquerdo e áreas temporais em pessoas com dislexia, o que orienta intervenções focadas em treino fonológico e multissensorial."
+  },
+  {
+    topic: "Bilinguismo e linguagem",
+    title: "Bilinguismo e cognição",
+    text: "Sobre o bilinguismo, pesquisas neuropsicológicas sugerem que:",
+    options: [
+      "Falar duas línguas sempre prejudica o desenvolvimento cognitivo",
+      "O uso de mais de uma língua não produz qualquer efeito no cérebro",
+      "O bilinguismo pode estar associado a maior recrutamento de áreas ligadas ao controle executivo e à memória de trabalho",
+      "O bilinguismo impede o desenvolvimento da linguagem escrita"
+    ],
+    correctIndex: 2,
+    correction: "Estudos indicam que bilíngues frequentemente apresentam maior envolvimento de áreas ligadas ao controle executivo e à memória de trabalho, o que pode trazer benefícios além do domínio linguístico."
+  },
+  {
+    topic: "Avaliação neuropsicológica da linguagem",
+    title: "Avaliação neuropsicológica",
+    text: "Na avaliação neuropsicológica da linguagem, é correto afirmar que:",
+    options: [
+      "Os testes devem ser aplicados de forma mecânica, sem considerar o contexto de vida do sujeito",
+      "A interpretação deve considerar apenas o desempenho quantitativo em testes padronizados",
+      "A avaliação deve integrar dados de testes, história de vida, contexto familiar e escolar",
+      "O vínculo com o paciente não interfere na qualidade dos dados"
+    ],
+    correctIndex: 2,
+    correction: "A avaliação neuropsicológica deve ser compreendida como um processo amplo que integra resultados de testes, história de vida, contexto familiar, escolar e cultural do sujeito."
+  },
+  {
+    topic: "Avaliação neuropsicológica da linguagem",
+    title: "Devolutiva na avaliação",
+    text: "A devolutiva na avaliação neuropsicológica da linguagem deve:",
+    options: [
+      "Ser evitada para não influenciar a família",
+      "Focar apenas nos déficits, sem discutir potencialidades",
+      "Ser clara, sensível, valorizar as potencialidades e indicar caminhos de intervenção",
+      "Ser feita apenas por escrito, sem diálogo com a família ou escola"
+    ],
+    correctIndex: 2,
+    correction: "A devolutiva deve ser conduzida com sensibilidade, esclarecendo dificuldades, valorizando potencialidades e propondo estratégias de intervenção contextualizadas."
   }
 ];
