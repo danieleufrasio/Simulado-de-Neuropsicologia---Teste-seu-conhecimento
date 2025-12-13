@@ -575,5 +575,215 @@ const questions = [
     ],
     correctIndex: 2,
     correction: "A devolutiva deve ser conduzida com sensibilidade, esclarecendo dificuldades, valorizando potencialidades e propondo estratégias de intervenção contextualizadas."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Relação entre aprendizagem e memória",
+    text: "Qual alternativa descreve melhor a relação entre aprendizagem e memória?",
+    options: [
+      "Aprendizagem e memória são processos totalmente independentes",
+      "A aprendizagem depende da memória para registrar e utilizar o conhecimento adquirido",
+      "A memória existe apenas para armazenar emoções, sem relação com a aprendizagem",
+      "A aprendizagem ocorre sem qualquer modificação cerebral"
+    ],
+    correctIndex: 1,
+    correction: "Aprendizagem é a aquisição de novas informações e habilidades, enquanto a memória permite armazenar, consolidar e recuperar o que foi aprendido para uso posterior."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Memória declarativa",
+    text: "A memória declarativa (explícita) envolve principalmente:",
+    options: [
+      "Habilidades motoras automáticas e hábitos",
+      "Lembranças inconscientes associadas a reflexos",
+      "Lembranças conscientes de fatos e eventos, como conhecimentos gerais e experiências pessoais",
+      "Apenas respostas emocionais da amígdala"
+    ],
+    correctIndex: 2,
+    correction: "A memória declarativa abrange lembranças conscientes de fatos (memória semântica) e eventos pessoais (memória episódica), apoiada por estruturas como hipocampo e lóbulos temporais mediais."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Memória não declarativa",
+    text: "Um exemplo típico de memória não declarativa (implícita) é:",
+    options: [
+      "Lembrar a data de aniversário de um amigo",
+      "Recordar conscientemente um filme assistido",
+      "Ser capaz de andar de bicicleta mesmo sem lembrar como aprendeu",
+      "Lembrar o enredo de um livro em detalhes"
+    ],
+    correctIndex: 2,
+    correction: "Memória não declarativa envolve habilidades e hábitos, como andar de bicicleta ou tocar um instrumento, mediada por gânglios da base, cerebelo e córtex motor, geralmente sem acesso consciente detalhado ao processo de aprendizagem."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Memória de trabalho",
+    text: "A memória de trabalho é importante porque:",
+    options: [
+      "Armazena informações por toda a vida sem modificações",
+      "Permite manter e manipular temporariamente informações para tarefas como raciocínio e resolução de problemas",
+      "Está restrita apenas às memórias emocionais",
+      "Funciona apenas durante o sono"
+    ],
+    correctIndex: 1,
+    correction: "A memória de trabalho mantém e manipula informações por curto período para apoiar atividades como raciocínio, compreensão de leitura e cálculo mental."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Etapas da memória",
+    text: "Os processos de codificação, consolidação, armazenamento e recuperação da memória referem-se, respectivamente, a:",
+    options: [
+      "Esquecer, memorizar, sonhar e imaginar",
+      "Transformar informação em traços neurais; estabilizá-los; mantê-los; e reativá-los quando necessário",
+      "Apenas repetir informações sem significado",
+      "Registrar estímulos sensoriais sem qualquer organização"
+    ],
+    correctIndex: 1,
+    correction: "Codificação transforma informações em representações neurais; consolidação estabiliza essas representações; armazenamento as mantém; e recuperação reativa o que foi previamente codificado."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Plasticidade sináptica",
+    text: "A plasticidade sináptica, por meio de processos como LTP (potenciação de longa duração) e LTD (depressão de longa duração), é importante porque:",
+    options: [
+      "Impede qualquer mudança nas conexões neurais",
+      "Garante que todas as sinapses tenham a mesma força",
+      "Permite fortalecer ou enfraquecer sinapses conforme a experiência, sendo base da aprendizagem e da memória",
+      "Serve apenas para controlar movimentos reflexos"
+    ],
+    correctIndex: 2,
+    correction: "LTP e LTD regulam a força das conexões sinápticas de acordo com a atividade neuronal, constituindo um mecanismo central da aprendizagem e da formação de memórias."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Emoção e memória",
+    text: "Sobre a influência das emoções na memória, é correto afirmar que:",
+    options: [
+      "Emoções não interferem na consolidação de memórias",
+      "Apenas emoções negativas são lembradas",
+      "Experiências emocionalmente marcantes tendem a ser melhor lembradas, mas estresse crônico pode prejudicar a memória declarativa",
+      "A amígdala não participa da modulação de memórias"
+    ],
+    correctIndex: 2,
+    correction: "A amígdala interage com hipocampo e córtex pré-frontal, fazendo com que experiências emocionalmente significativas sejam mais facilmente consolidadas, enquanto o estresse crônico pode prejudicar o hipocampo e a memória declarativa."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Sono e consolidação",
+    text: "O sono está relacionado à memória porque:",
+    options: [
+      "Durante o sono o cérebro ‘desliga’ e nada é consolidado",
+      "A consolidação de memórias ocorre principalmente durante o sono, especialmente nas fases de sono profundo e REM",
+      "Apenas cochilos curtos têm efeito na memória",
+      "O sono só influencia a memória implícita"
+    ],
+    correctIndex: 1,
+    correction: "Períodos de sono, especialmente sono profundo e sono REM, favorecem a consolidação das memórias adquiridas durante a vigília, sendo essenciais para um bom desempenho cognitivo."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Repetição espaçada",
+    text: "A estratégia de repetição espaçada na aprendizagem é mais eficaz porque:",
+    options: [
+      "Exige estudar tudo de uma vez, pouco antes da prova",
+      "Diminui o número de revisões necessárias ao longo do tempo",
+      "Distribui as revisões em intervalos, fortalecendo gradualmente as conexões sinápticas e facilitando a recuperação futura",
+      "Funciona apenas para conteúdos visuais"
+    ],
+    correctIndex: 2,
+    correction: "Repetir o conteúdo em intervalos de tempo favorece o fortalecimento sináptico e reduz a taxa de esquecimento, promovendo aprendizagem de longo prazo mais estável."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Aprendizagem ativa",
+    text: "A aprendizagem ativa contribui para a memória porque:",
+    options: [
+      "Mantém o aluno apenas ouvindo passivamente o professor",
+      "Inibe a participação do estudante para evitar distrações",
+      "Envolve o aluno em reflexão, discussão, resolução de problemas e ensino recíproco, favorecendo compreensão profunda e retenção",
+      "Substitui completamente a necessidade de revisão"
+    ],
+    correctIndex: 2,
+    correction: "Quando o aluno participa ativamente (reflete, discute, resolve problemas, ensina), elabora melhor as informações, o que facilita a consolidação e a recuperação."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Ensino multisensorial",
+    text: "O ensino multisensorial é especialmente útil porque:",
+    options: [
+      "Utiliza apenas estímulos auditivos para evitar sobrecarga",
+      "Restringe o uso de recursos visuais na explicação",
+      "Aproveita diferentes canais sensoriais (visão, audição, tato, movimento) para facilitar a codificação e o armazenamento das informações",
+      "Serve apenas para alunos sem dificuldades de aprendizagem"
+    ],
+    correctIndex: 2,
+    correction: "Abordagens multisensoriais permitem que o conteúdo seja acessado por múltiplas vias, facilitando a codificação e a fixação, especialmente em estudantes com dificuldades de aprendizagem."
+  },
+  {
+    topic: "Aprendizagem e memória",
+    title: "Organização da informação",
+    text: "Mapas mentais, esquemas gráficos e mnemônicos ajudam a memória porque:",
+    options: [
+      "Tornam a informação mais confusa e desorganizada",
+      "Atrapalham a síntese de ideias",
+      "Estruturam e categorizam o conteúdo, facilitando codificação e recuperação",
+      "Eliminam a necessidade de estudar o conteúdo"
+    ],
+    correctIndex: 2,
+    correction: "Ferramentas de organização ajudam a estruturar e relacionar informações, o que facilita sua codificação no cérebro e posterior recuperação."
+  },
+  {
+    topic: "Transtornos do neurodesenvolvimento",
+    title: "TDAH e funções cognitivas",
+    text: "O TDAH está frequentemente associado a prejuízos em quais domínios?",
+    options: [
+      "Apenas em habilidades motoras grossas",
+      "Funções executivas, memória de trabalho, atenção sustentada e autorregulação",
+      "Somente na linguagem oral",
+      "Exclusivamente em capacidades visuais"
+    ],
+    correctIndex: 1,
+    correction: "No TDAH são comuns dificuldades em funções executivas (como controle inibitório e planejamento), memória de trabalho, atenção sustentada e autorregulação emocional."
+  },
+  {
+    topic: "Transtornos do neurodesenvolvimento",
+    title: "TEA e perfil cognitivo",
+    text: "Sobre o Transtorno do Espectro Autista (TEA), é correto afirmar que:",
+    options: [
+      "Todas as crianças com TEA apresentam o mesmo perfil cognitivo",
+      "O TEA envolve sempre déficit intelectual global",
+      "Frequentemente há um perfil heterogêneo, com áreas de grande habilidade coexistindo com dificuldades marcantes",
+      "O TEA não interfere nas habilidades sociais"
+    ],
+    correctIndex: 2,
+    correction: "Crianças com TEA podem apresentar áreas de desempenho elevado ao lado de dificuldades acentuadas, exigindo avaliações individualizadas e intervenções personalizadas."
+  },
+  {
+    topic: "Transtornos do neurodesenvolvimento",
+    title: "Transtornos específicos de aprendizagem",
+    text: "Transtornos como dislexia, discalculia e disgrafia são caracterizados por:",
+    options: [
+      "Falta de interesse escolar e má vontade do estudante",
+      "Dificuldades específicas em leitura, matemática ou escrita, associadas a alterações em processos cognitivos como processamento fonológico e memória de trabalho",
+      "Apenas baixa inteligência geral",
+      "Problemas exclusivamente emocionais, sem base neurocognitiva"
+    ],
+    correctIndex: 1,
+    correction: "Transtornos específicos da aprendizagem afetam habilidades acadêmicas específicas e estão relacionados a alterações em processos como processamento fonológico, memória de trabalho e funções visuoespaciais, não sendo explicados por desinteresse ou baixa inteligência."
+  },
+  {
+    topic: "Transtornos do neurodesenvolvimento",
+    title: "Papel da escola e da família",
+    text: "No acompanhamento de crianças com transtornos do neurodesenvolvimento, é fundamental que:",
+    options: [
+      "A responsabilidade recaia apenas sobre a família",
+      "A escola atue isoladamente, sem envolver a família",
+      "Haja trabalho conjunto entre escola, família e equipe de saúde, com estratégias ajustadas ao perfil da criança",
+      "Apenas intervenções medicamentosas sejam consideradas"
+    ],
+    correctIndex: 2,
+    correction: "Uma abordagem eficaz requer atuação integrada de escola, família e profissionais de saúde, com estratégias educacionais e terapêuticas alinhadas ao perfil neuropsicológico da criança."
   }
+
+
 ];
