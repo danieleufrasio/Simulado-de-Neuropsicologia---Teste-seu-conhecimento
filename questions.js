@@ -783,6 +783,254 @@ const questions = [
     ],
     correctIndex: 2,
     correction: "Uma abordagem eficaz requer atuação integrada de escola, família e profissionais de saúde, com estratégias educacionais e terapêuticas alinhadas ao perfil neuropsicológico da criança."
+  },
+
+    {
+    topic: "Transtornos do neurodesenvolvimento",
+    title: "Definição geral",
+    text: "Os transtornos do neurodesenvolvimento podem ser definidos como:",
+    options: [
+      "Condições passageiras que desaparecem espontaneamente na adolescência",
+      "Condições caracterizadas por prejuízos no desenvolvimento do cérebro ou sistema nervoso, afetando funções cognitivas, motoras, sociais e emocionais",
+      "Apenas dificuldades específicas de leitura e escrita",
+      "Condições que surgem exclusivamente na velhice"
+    ],
+    correctIndex: 1,
+    correction: "Transtornos do neurodesenvolvimento envolvem alterações no desenvolvimento cerebral e/ou do sistema nervoso, causando prejuízos em funções cognitivas, motoras, sociais e emocionais, geralmente com início na infância."
+  },
+  {
+    topic: "Transtornos do neurodesenvolvimento",
+    title: "Exemplos segundo o DSM-5",
+    text: "Segundo o DSM-5, quais dos seguintes são considerados transtornos do neurodesenvolvimento?",
+    options: [
+      "TEA, TDAH, Dislexia, Discalculia, Transtorno do Desenvolvimento da Coordenação e Deficiência Intelectual",
+      "Apenas depressão e transtorno de pânico",
+      "Somente TEA e esquizofrenia",
+      "Transtornos de personalidade e transtornos alimentares"
+    ],
+    correctIndex: 0,
+    correction: "O DSM-5 inclui entre os transtornos do neurodesenvolvimento: TEA, TDAH, Dislexia, Discalculia, Transtorno do Desenvolvimento da Coordenação, Deficiência Intelectual, entre outros."
+  },
+  {
+    topic: "TDAH",
+    title: "Bases cerebrais do TDAH",
+    text: "No TDAH, quais circuitos cerebrais estão mais frequentemente implicados?",
+    options: [
+      "Circuitos occipito-temporais relacionados à visão",
+      "Circuitos frontoestriatais envolvendo córtex pré-frontal e gânglios da base",
+      "Apenas o hipocampo",
+      "Exclusivamente o tronco encefálico"
+    ],
+    correctIndex: 1,
+    correction: "Pesquisas apontam para disfunções em circuitos frontoestriatais, que envolvem córtex pré-frontal e gânglios da base, importantes para controle inibitório, atenção sustentada e regulação motora."
+  },
+  {
+    topic: "TDAH",
+    title: "Sintomas principais",
+    text: "Quais são sintomas centrais do TDAH?",
+    options: [
+      "Delírios e alucinações",
+      "Déficits exclusivamente motores",
+      "Desatenção, hiperatividade e impulsividade que interferem no funcionamento escolar, social e familiar",
+      "Apenas dificuldades na linguagem escrita"
+    ],
+    correctIndex: 2,
+    correction: "O TDAH se caracteriza principalmente por desatenção, hiperatividade e impulsividade, com impacto significativo em diferentes contextos de vida da criança."
+  },
+  {
+    topic: "TEA",
+    title: "Características do TEA",
+    text: "O Transtorno do Espectro Autista (TEA) é caracterizado por:",
+    options: [
+      "Dificuldades na comunicação social e presença de comportamentos restritos e repetitivos",
+      "Apenas déficits motores finos",
+      "Sintomas exclusivamente de ansiedade",
+      "Comprometimento apenas em habilidades matemáticas"
+    ],
+    correctIndex: 0,
+    correction: "O TEA envolve alterações na comunicação social, na reciprocidade emocional e padrões restritos e repetitivos de comportamento ou interesses."
+  },
+  {
+    topic: "TEA",
+    title: "Bases neurais do TEA",
+    text: "Estudos em TEA frequentemente apontam alterações em quais estruturas cerebrais?",
+    options: [
+      "Somente no córtex occipital",
+      "Amígdala, córtex pré-frontal medial, corpo caloso, cerebelo e conectividade entre regiões cerebrais",
+      "Apenas no hipocampo",
+      "Exclusivamente no tálamo"
+    ],
+    correctIndex: 1,
+    correction: "No TEA são observadas alterações em estruturas como amígdala, córtex pré-frontal medial, corpo caloso, cerebelo e em padrões de conectividade funcional entre diferentes regiões cerebrais."
+  },
+  {
+    topic: "Dislexia",
+    title: "Definição de Dislexia",
+    text: "A Dislexia é melhor descrita como:",
+    options: [
+      "Falta de interesse em leitura",
+      "Distúrbio específico de aprendizagem, com dificuldades na decodificação de palavras e fluência de leitura, apesar de inteligência e escolarização adequadas",
+      "Problema exclusivo de visão",
+      "Transtorno global de linguagem oral"
+    ],
+    correctIndex: 1,
+    correction: "A Dislexia é um transtorno específico de aprendizagem relacionado à leitura, com dificuldades na decodificação fonológica e fluência, não explicadas por baixa inteligência ou falta de escolarização."
+  },
+  {
+    topic: "Dislexia",
+    title: "Bases cerebrais da Dislexia",
+    text: "Quais áreas cerebrais mostram frequentemente ativação atípica em pessoas com Dislexia?",
+    options: [
+      "Cerebelo e córtex occipital direito",
+      "Giro angular, giro supramarginal e giro fusiforme esquerdos",
+      "Apenas o córtex pré-frontal direito",
+      "Somente o tronco encefálico"
+    ],
+    correctIndex: 1,
+    correction: "Em Dislexia, estudos indicam menor ativação em regiões do hemisfério esquerdo associadas ao processamento fonológico, como giro angular, giro supramarginal e giro fusiforme."
+  },
+  {
+    topic: "Deficiência Intelectual",
+    title: "Características da Deficiência Intelectual",
+    text: "A Deficiência Intelectual envolve principalmente:",
+    options: [
+      "Comprometimento apenas em habilidades motoras",
+      "Funcionamento intelectual e comportamento adaptativo significativamente abaixo da média, afetando autonomia e aprendizado",
+      "Alterações apenas emocionais",
+      "Dificuldades exclusivas de leitura"
+    ],
+    correctIndex: 1,
+    correction: "A Deficiência Intelectual implica prejuízos em funcionamento intelectual e comportamento adaptativo, impactando aprendizagem, resolução de problemas, autonomia e participação social."
+  },
+  {
+    topic: "Deficiência Intelectual",
+    title: "Causas da Deficiência Intelectual",
+    text: "Entre as possíveis causas da Deficiência Intelectual, podem estar:",
+    options: [
+      "Apenas fatores psicológicos",
+      "Exclusivamente acidentes na idade adulta",
+      "Fatores genéticos, alterações metabólicas, infecções congênitas, desnutrição severa e lesões perinatais",
+      "Somente uso de tecnologia na infância"
+    ],
+    correctIndex: 2,
+    correction: "As causas são múltiplas e incluem fatores genéticos (como Síndrome de Down), alterações metabólicas, infecções congênitas, desnutrição severa e eventos perinatais."
+  },
+  {
+    topic: "Transtorno do Desenvolvimento da Coordenação",
+    title: "Características do TDC (dispraxia)",
+    text: "O Transtorno do Desenvolvimento da Coordenação (TDC) é caracterizado por:",
+    options: [
+      "Déficits apenas em habilidades de leitura",
+      "Dificuldades significativas na coordenação motora, interferindo em tarefas como escrever, correr e manipular objetos",
+      "Alterações exclusivamente emocionais",
+      "Dificuldade apenas na memorização de fatos"
+    ],
+    correctIndex: 1,
+    correction: "O TDC envolve prejuízos na coordenação de movimentos finos e grossos, afetando tarefas diárias como escrita, vestir-se, correr e manipular objetos."
+  },
+  {
+    topic: "Transtorno do Desenvolvimento da Coordenação",
+    title: "Bases neurais do TDC",
+    text: "Quais estruturas estão frequentemente associadas ao TDC?",
+    options: [
+      "Córtex occipital e hipocampo",
+      "Cerebelo, gânglios da base e córtex parietal",
+      "Apenas amígdala",
+      "Exclusivamente o córtex pré-frontal medial"
+    ],
+    correctIndex: 1,
+    correction: "Disfunções no cerebelo, gânglios da base e córtex parietal estão relacionadas às dificuldades de integração sensoriomotora e planejamento motor observadas no TDC."
+  },
+  {
+    topic: "Discalculia",
+    title: "Definição de Discalculia",
+    text: "A Discalculia é um transtorno específico que afeta:",
+    options: [
+      "Apenas a linguagem oral",
+      "A compreensão de conceitos numéricos, cálculos e operações aritméticas",
+      "Exclusivamente habilidades motoras",
+      "Somente a memória visual"
+    ],
+    correctIndex: 1,
+    correction: "A Discalculia é um transtorno específico de aprendizagem que compromete a compreensão de quantidade, cálculos e manipulação de operações matemáticas."
+  },
+  {
+    topic: "Transtornos do neurodesenvolvimento",
+    title: "Comorbidade",
+    text: "Sobre comorbidade nos transtornos do neurodesenvolvimento, é correto afirmar que:",
+    options: [
+      "É muito rara e pouco relevante clinicamente",
+      "Ocorre apenas entre TEA e Deficiência Intelectual",
+      "É comum que um mesmo indivíduo apresente mais de um transtorno, como TDAH associado a dificuldades de aprendizagem ou TDC",
+      "Impede qualquer tipo de intervenção"
+    ],
+    correctIndex: 2,
+    correction: "É frequente que crianças com um transtorno do neurodesenvolvimento apresentem outro quadro associado, como TDAH com Dislexia ou TDC, o que exige planejamento de intervenção abrangente."
+  },
+  {
+    topic: "Intervenção neuropsicológica",
+    title: "Foco da intervenção neuropsicológica",
+    text: "A abordagem neuropsicológica dos transtornos do neurodesenvolvimento deve:",
+    options: [
+      "Apenas apontar déficits, sem considerar potencialidades",
+      "Ignorar o contexto escolar e familiar",
+      "Identificar tanto déficits quanto capacidades preservadas, orientando intervenções individualizadas",
+      "Restringir-se ao uso de testes padronizados"
+    ],
+    correctIndex: 2,
+    correction: "A intervenção neuropsicológica busca compreender déficits e potencialidades, construindo planos individualizados que considerem o contexto escolar, familiar e emocional."
+  },
+  {
+    topic: "Intervenção neuropsicológica",
+    title: "Princípios na escola",
+    text: "No contexto educacional, intervenções neuropsicológicas eficazes tendem a ser:",
+    options: [
+      "Padronizadas e iguais para todos os estudantes",
+      "Rígidas e pouco flexíveis",
+      "Flexíveis, individualizadas e responsivas às necessidades cognitivas e emocionais de cada estudante",
+      "Exclusivamente baseadas em punição de comportamentos inadequados"
+    ],
+    correctIndex: 2,
+    correction: "Estratégias eficazes são flexíveis, individualizadas e adaptadas ao perfil de cada estudante, reconhecendo trajetórias de desenvolvimento diferentes e necessidades específicas."
+  },
+  {
+    topic: "Intervenção neuropsicológica",
+    title: "Funções executivas e escola",
+    text: "O desenvolvimento de funções executivas na escola pode ser estimulado por:",
+    options: [
+      "Atividades mecânicas repetitivas, sem necessidade de pensar",
+      "Jogos, dinâmicas e tarefas que envolvem planejamento, resolução de problemas e controle inibitório",
+      "Apenas cópia de textos longos",
+      "Exclusivamente provas de múltipla escolha"
+    ],
+    correctIndex: 1,
+    correction: "Atividades que exigem planejamento, tomada de decisão, controle inibitório e resolução de problemas ajudam a fortalecer funções executivas."
+  },
+  {
+    topic: "Intervenção e ambiente",
+    title: "Ambiente escolar como facilitador",
+    text: "Qual característica do ambiente escolar tende a facilitar a aprendizagem de crianças com dificuldades neuropsicológicas?",
+    options: [
+      "Rotinas imprevisíveis e instruções confusas",
+      "Ambiente desorganizado e barulhento",
+      "Organização do espaço, previsibilidade de rotinas, instruções claras e acessibilidade de materiais",
+      "Ausência de qualquer adaptação"
+    ],
+    correctIndex: 2,
+    correction: "Ambientes organizados, com rotinas previsíveis, instruções claras e materiais acessíveis, favorecem o engajamento e a autonomia de estudantes com dificuldades neuropsicológicas."
+  },
+  {
+    topic: "Intervenção e potencialidades",
+    title: "Enfoque em potencialidades",
+    text: "Uma perspectiva ética e contemporânea da neuropsicologia aplicada à educação enfatiza que:",
+    options: [
+      "O foco deve ser apenas nos déficits",
+      "O diagnóstico encerra as possibilidades de desenvolvimento",
+      "É preciso reconhecer e estimular potencialidades, talentos e criatividade, para além da remediação de déficits",
+      "A escola deve excluir estudantes com transtornos do neurodesenvolvimento"
+    ],
+    correctIndex: 2,
+    correction: "Para além de remediar dificuldades, a neuropsicologia na educação deve promover potencialidades, criatividade e autonomia, construindo uma escola mais inclusiva e humanizada."
   }
 
 
